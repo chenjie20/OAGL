@@ -2,7 +2,7 @@ close all;
 clear;
 clc;
 
-addpath('../data');
+addpath('data');
 addpath('utility');
 
 %---------------------- load data------------------------------------------
