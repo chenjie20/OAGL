@@ -2,8 +2,8 @@ close all;
 clear;
 clc;
 
-addpath('../data');
-addpath('../utility');
+addpath('data');
+addpath('utility');
 
 %---------------------- load data------------------------------------------
 missing_raitos = [0, 0.1, 0.3, 0.5];
