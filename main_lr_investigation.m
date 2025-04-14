@@ -2,7 +2,7 @@ close all;
 clear;
 clc;
 
-addpath('../data');
+addpath('data');
 addpath('utility');
 
 lambdas = [2, 5, 10];
