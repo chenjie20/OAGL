@@ -161,7 +161,7 @@ for s_index = 1 : length(index_set)
             end
             [nmi, purity, fmeasure, ri, ari] = calculate_results(class_labels, cluster_data);
             disp([missing_raito, num_neighbors, alpha, beta, acc, nmi, purity, fmeasure, ri, ari, iter1]);            
-            %writematrix([missing_raito, num_neighbors, alpha, beta, roundn(acc, -2), roundn(nmi, -4), roundn(purity, -4), roundn(fmeasure, -4), roundn(ri, -4), roundn(ari, -4), roundn(time_cost, -2), iter1], final_result, "Delimiter", 'tab', 'WriteMode', 'append');       
+            writematrix([missing_raito, num_neighbors, alpha, beta, roundn(acc, -2), roundn(nmi, -4), roundn(purity, -4), roundn(fmeasure, -4), roundn(ri, -4), roundn(ari, -4), roundn(time_cost, -2), iter1], final_result, "Delimiter", 'tab', 'WriteMode', 'append');       
         catch
             writematrix([missing_raito, num_neighbors, alpha, beta, iter1], final_result, "Delimiter", 'tab', 'WriteMode', 'append');
         end
