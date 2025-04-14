@@ -2,7 +2,7 @@ close all;
 clear;
 clc;
 
-addpath('../data');
+addpath('data');
 addpath('utility');
 
 num_neighbors_set = [5, 10, 15, 20];
